@@ -1,0 +1,13 @@
+version: "3.8"
+services: 
+    spigot:
+        container_name: minecraft_spigot_118
+        build: ./
+        expose: 
+            - 25565
+        ports: 
+            - "25565:25565"
+        volumes:
+            - ./volumes/world/:/world
+            - ./volumes/world_nether/:/world_nether
+            - ./volumes/world_the_end/:/world_the_end
