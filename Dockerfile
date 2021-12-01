@@ -1,3 +1,4 @@
+# syntax=docker/dockerfile:1.0.0-experimental
 FROM ubuntu
 RUN mkdir MinecraftServer
 # WORKDIR /MinecraftServer
